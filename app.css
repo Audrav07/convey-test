@@ -1,0 +1,1476 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.callout {
+    border-radius: 0;
+    z-index: 1;
+}
+
+.parallax-1 {
+    /* The image used */
+    /* background-image: url(https://picsum.photos/1920/1080); */
+    /* Set a specific height */
+    /* height: 500px;  */
+    position: relative;
+    height: 101vh;
+    margin-top: -60px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url(../assets/images/who_we_are.jpg);
+    /* Set a specific height */
+    /* height: 500px;  */
+    /* height: 100vh; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3 {
+    /* The image used */
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    /* Set a specific height */
+    /* height: 500px;  */
+    /* height: 100vh; */
+
+    /* Create the parallax scrolling effect
+    background-position: center; */
+
+
+
+    /* background-size: cover; */
+}
+
+.parallax-card {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.60);
+    color: #fe0000;
+    padding: 2rem 190px 2rem 2rem;
+    /* width: 50%; */
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    bottom: 30vh;
+    -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+.parallax-card-2 {
+    text-align: left;
+    /* background-color: rgba(0, 0, 0, 0.60); */
+    color: #fe0000;
+    padding: 2rem 190px 2rem 2rem;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -30vh;
+    /* -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.75); */
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    margin: 0
+}
+
+
+u {
+    margin-top: 20px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+}
+
+
+.three-box {
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+    min-height: 280px;
+}
+
+.who-box {
+    padding: 2.333rem 2.333rem 2.333rem 2.333rem;
+    text-align: left;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* border-bottom: double white 20px; */
+}
+
+.custom-box {
+    /* padding: 40px 40px 0 40px; */
+    text-align: right;
+    vertical-align: middle;
+    min-height: 50px;
+    background-color: black;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    /* border-top: double white 7px; */
+    /* border-bottom: double #fe0000 11px; */
+}
+
+.product-holder {
+    padding: 2.333rem 2.333rem 2.333rem 2.333rem;
+    text-align: left;
+    vertical-align: middle;
+    /* min-height: 140px; */
+    border: none;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+
+    background-color: white;
+    /* border-top: double rgb(53, 53, 53) 20px; */
+    /* border-top: double black 11px; */
+    /* border-bottom: double white 11px; */
+}
+
+.services-holder {
+    padding: 2.333rem 2.333rem 2.333rem 2.333rem;
+    text-align: left;
+    vertical-align: middle;
+    background-color: #fe0000a6;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    border: none;
+    /* border-top: double rgb(53, 53, 53) 20px; */
+    /* border-top: double black 11px; */
+    /* border-bottom: double white 11px; */
+}
+
+.product-break {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    min-height: 20px;
+    border: none;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    background-color: #fe0000d3;
+    /* background-color: black;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"); */
+    /* border-bottom: double white 7px; */
+}
+
+.app-break {
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    background-color: #fe0000d3;
+    background-attachment: fixed;
+    height: 100px;
+    margin: 0;
+    /* margin: 2.333rem 0 2.333rem 0; */
+    /* -webkit-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44); */
+}
+
+.app-box {
+    /* background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"); */
+    background-color: #fe0000d3;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 14px;
+    -webkit-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+}
+
+.app-box-2 {
+    border: 5px solid white;
+    height: 100%;
+    color: white;
+    padding: 14px;
+
+}
+
+.service-box {
+    /* background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"); */
+    background-color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 14px;
+    /* -webkit-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44); */
+}
+
+.service-box-2 {
+    border: 5px solid #fe0000;
+    height: 100%;
+    color: #fe0000;
+    padding: 14px;
+    /* -webkit-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44); */
+}
+
+.service-box-empty {
+    /* background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"); */
+    /* background-color: white; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 14px;
+    /* -webkit-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44); */
+}
+
+.app-box-empty {
+    height: 200px;
+    padding: 14px;
+
+}
+
+.app-box-empty-2 {
+    height: 200px;
+    padding: 14px;
+    border: 5px solid #707070;
+    height: 100%;
+    color: #707070;
+    padding: 14px;
+}
+
+.product-box {
+    /* height: 100%; */
+    /* border: 1px solid gray; */
+    height: 250px;
+    background-color: rgba(207, 46, 46, 0.384);
+    text-align: center;
+    vertical-align: middle;
+    /* margin: 7px; */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    /* padding: 20px 20px 20px 20px */
+}
+
+.product-description {
+    padding: 1rem;
+    min-height: 50px;
+    width: 100%;
+    position: absolute;
+    /* bottom: 50%; */
+    left: 0;
+
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    background-color: #fe0000c2;
+    text-align: left;
+    color: white
+}
+
+.demo-break {
+    text-align: center;
+    border: none;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    background-color: white;
+    z-index: 0;
+    height: fit-content;
+    padding: 2.333rem 0 2.333rem 0;
+}
+
+.demo-holder {
+    width: 100%;
+    height: fit-content;
+    padding: 2.333rem 4.666rem 2.333rem 4.666rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: none;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    background-color: black;
+    z-index: 0;
+    color: white;
+    /* border-radius: 5px; */
+    -webkit-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: inset 0px 0px 22px 10px rgba(0, 0, 0, 0.44);
+
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 4px rgba(150, 150, 150, 0.80);
+}
+
+
+.demo-button {
+    /* background-color: white; */
+    /* color: red; */
+    border: 3px solid white;
+}
+
+
+
+.product-box-1 {
+    /* height: 100%; */
+    /* border: 1px solid gray; */
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 20px 0px 20px;
+    background-image: url(../assets/products/slip_sheet.gif);
+    background-size: cover;
+}
+
+.grid-container {
+    max-width: 100%;
+    /* background-color: #160421; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"); */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.title-bar:hover {
+    background-color: #ffffff;
+}
+
+
+.sticky-topbar {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 39.9375em) {
+  .no-js .top-bar {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+.sticky-container {
+  z-index: 5;
+}
+
+
+
+.js-off-canvas-overlay {
+    background: rgba(248, 248, 248, 0.37);
+
+    /* background: rgba(255, 1, 1, 0.25); */
+}
+
+.footer-break {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border: none;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    background-color: #fe0000;
+    width: 100%;
+    height: 25px;
+    color: white
+}
+
+#footer__break{
+
+      width: 200px;
+      height: 100px;
+      background: red;
+    }
+
+.triangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+    }
+
+.footer-button {
+    width: fit-content;
+    height: 200px;
+    padding: 1.75rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    border: none;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    background-color: black;
+    z-index: 3;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.off-canvas {
+    position: fixed;
+    z-index: 12;
+    transition: transform 0.5s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+
+}
+
+/* .contact-bottom {
+    text-align: right
+} */
+
+/* .sticky2-container {
+    position: relative;
+}
+
+.sticky2 {
+    position: relative;
+    z-index: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.sticky2.is-stuck {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.sticky2.is-stuck.is-at-top {
+    top: 0;
+}
+
+.sticky2.is-stuck.is-at-bottom {
+    bottom: 0;
+}
+
+.sticky2.is-anchored {
+    position: relative;
+    right: auto;
+    left: auto;
+}
+
+.sticky2.is-anchored.is-at-bottom {
+    bottom: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url(https://picsum.photos/1920/1080);
+    /* Set a specific height */
+    /* height: 500px;  */
+    height: 104vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container {
+    max-width: 100%;
+}
+
+.pallet__transfer {
+    height: 260px;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+}
+
+
+/*li{
+    list-style-type: none;
+}*/
+
+li {
+    list-style-type: none;
+}
+
+.services__title {
+    z-index: 20;
+    right: 40px;
+    position: relative;
+    font-weight: bold;
+    color: #f8f8f8;
+    top: 25px;
+
+}
+
+.services__title_app {
+    z-index: 20;
+    position: relative;
+    margin-left: 75px;
+    /*     float:right;*/
+    bottom: 60px;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+#app__col {
+    z-index: 40;
+    position: relative;
+}
+
+.service__list {
+    z-index: 30;
+    position: relative;
+    top: 60px;
+    right: 8px;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
+.service__list_tech {
+    z-index: 30;
+    position: relative;
+    top: 95px;
+    right: 10px;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.service__list_parts {
+    z-index: 30;
+    position: relative;
+    top: 100px;
+    /* left: 20px;*/
+    right: 950px;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
+.service__list_training {
+    z-index: 30;
+    position: relative;
+    top: 135px;
+    right: 950px;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
+.line__app {
+    position: absolute;
+    z-index: 70;
+    right: -305px;
+    margin-top: -125px;
+
+}
+
+.line__services {
+    position: absolute;
+    z-index: 50;
+    margin-top: -80px;
+    left: -1px;
+
+    /*bottom: 20px;*/
+}
+
+.app__list_bag {
+    z-index: 30;
+    position: relative;
+    top: 22px;
+    float: right;
+    right: 100px;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.app__list_boxes {
+    z-index: 30;
+    position: relative;
+    top: 78px;
+    float: right;
+    /* padding-right: 290px;*/
+    color: #f8f8f8;
+    right: 57px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.app__list_brick {
+    z-index: 30;
+    position: relative;
+    top: 22px;
+    float: right;
+    left: 180px;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.app__list_pail {
+    z-index: 30;
+    position: relative;
+    top: 78px;
+    float: right;
+    left: 215px;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.responsive-card-table {
+    border-collapse: collapse;
+}
+
+.responsive-card-table.scrolll tbody {
+    background-color: transparent;
+}
+
+table thead {
+    background: none;
+
+
+}
+/*more info*/
+
+.about__para{
+   font-weight: bold;
+
+    font-family: 'Lora', serif;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: -0.36px;
+    color:#3e494a;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-content{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #677171;
+    margin: 14px auto 0;
+    padding-top: 10px;
+}
+
+
+.contact__button{
+    background-color: #0486E4;
+    color: #ffffff;
+
+}
+
+.contact__btn{
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+
+}
+
+.rule-lg{
+    padding-top: 220px;
+}
+
+.rule-lg:before{
+    top:60px;
+}
+
+
+
+.rule{
+    position: relative;
+}
+
+.hero{
+    margin-bottom: 30px;
+     background-color: #ffffff;
+}
+
+.rule-top::before{
+    content: '';
+    position: absolute;
+    margin-bottom: 10px;
+    left: 50%;
+    height: 1px;
+    width: 50vw;
+    max-width: 300px;
+    background-color: #dfe4e4;
+    -webkit-transform:translateX(-50%);
+    transform: translateX(-50%);
+ 
+}
+
+/*paragraph before contact us*/
+.row__para{
+    max-width: 940px;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+.section-contact{
+    padding-top: 7.5rem;
+}
+
+
+.row.columns{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.section-contact.columns.rows .columns.contact-top-section{
+    background-color: #f8f8f8;
+    padding: 3rem 1rem 1rem;
+}
+
+h2{
+    font-size: 40px;
+    font-family: "Antenna Cond";
+    font-weight: 200;
+    line-height: 1.23;
+    padding-bottom: .5rem;
+}
+
+.section-contact.columns.row .columns.contact-top-section p{
+    font-size: 1.25rem;
+}
+
+.h2+p{
+    margin-top: 1rem;
+}
+
+*+p{
+    margin-top: 1.1111rem;
+}
+
+.hs-form-iframe{
+        position: static;
+    border: none;
+    display: block;
+    overflow: hidden;
+    width: 282px;
+    height: 450px;
+}
+
+.small-12{
+    -webkit-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.medium-6{
+     -webkit-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.section-contact.columns.rows .columns.contact-top-section a:not(.telephone){color:#d52f5b;}
+@media only screen and (min-width: 1025px){
+
+    .large-6{
+        -webkit-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .section-container .section-inner{
+        margin: 0 50px;
+    }
+
+    .columns.row .columns .contact-top-section{
+        padding: 4rem 5% 4rem;
+    }
+
+    .section-contact .columns .row .columns .contact-top-section:not(:first-child) {
+    padding: 6rem 5% 4rem;
+}
+}
+
+@media(min-width: 730px){
+    h2{
+        font-size: calc(.45924vw + 32.64753px);
+    }
+}
+
+@media(min-width: 320px){
+    h2{
+        font-size: calc(-.97561vw + 43.12195px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.rule-lg:before{
+    top:120px;
+}
+}
+
+
+@media screen and (max-width: 39.9375em){
+
+.about__para{
+
+    font-weight: bold;
+    font-size: 20px;
+
+}
+ 
+     
+}
+
+
+
+
+
+
+
+/*contact form*/
+.contact-us-section {
+  padding: 2rem;
+  background: #fefefe;
+}
+
+.contact-us-section .contact-us-section-left {
+  padding-right: 2rem;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .contact-us-section .contact-us-section-left {
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.contact-us-section .contact-us-section-right {
+  padding-left: 2rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .contact-us-section .contact-us-section-right {
+    border-left: 1px solid #e6e6e6;
+  }
+}
+
+.contact-us-section .contact-us-header {
+  margin-bottom: 2rem;
+
+}
+
+@media screen and (min-width: 40em) and (max-width: 74.9375em) {
+  .contact-us-section .contact-us-header {
+    font-size: 32px;
+  }
+}
+
+.contact-us-section .responsive-embed {
+  margin-bottom: 0;
+  padding-bottom: 55%;
+}
+
+.contact-us-form input[type=text],
+.contact-us-form input[type=email],
+.contact-us-form textarea {
+  margin-bottom: 1.5rem;
+}
+
+.contact-us-form-actions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-us-form-actions input[type=submit] {
+  border-radius: 5000px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.contact-us-form-actions .contact-us-file-button {
+  background: transparent;
+  color: #8a8a8a;
+}
+
+.contact-us-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+li a {
+     list-style-type: none;
+  color: #0a0a0a;
+   margin: 0 0 3px 0;
+}
+
+.contact-us-list li::before {
+  margin-right: 2rem;
+  font-size: 2rem;
+  vertical-align: middle;
+  color: #8a8a8a;
+  font-family: 'FontAwesome';
+    list-style-type: none;
+
+
+
+}
+
+.contact-us-list .address::before {
+
+  margin-left: 0.4rem;
+  margin-right: 2.3rem;
+    padding: 10px;
+
+}
+
+
+/*footer css*/
+
+
+
+/*new footer*/
+
+
+#engadget-footer-sitemap-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
+  background-color: #0a0a0a;
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: #e6e6e6;
+  padding: 3.75rem 0;
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap::before, #engadget-footer-sitemap-container #engadget-footer-sitemap::after {
+  display: table;
+  content: ' ';
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap::after {
+  clear: both;
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap a {
+  color: #e6e6e6 !important;
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
+  float: left;
+  width: 50%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:nth-of-type(1n) {
+  clear: none;
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:nth-of-type(2n+1) {
+  clear: both;
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:last-child {
+  float: left;
+}
+
+@media print, screen and (min-width: 64em) {
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
+    float: left;
+    width: 25%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) and (min-width: 40em) {
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:nth-of-type(1n) {
+    clear: none;
+  }
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:nth-of-type(4n+1) {
+    clear: both;
+  }
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:last-child {
+    float: left;
+  }
+}
+
+#engadget-footer-sitemap-container #engadget-footer-sitemap .links .link-column:not(:last-child) {
+  border-right: 1px solid #e6e6e6;
+}
+
+#engadget-footer-social-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
+  background-color: #8a8a8a;
+    margin-top: 200px;
+
+
+    padding: 0px;
+    margin: 0 -1rem -1rem -1rem;
+    overflow: hidden;
+}
+
+#engadget-footer-social-container #engadget-footer-social {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #e6e6e6;
+  padding: 3.75rem 0;
+}
+
+#engadget-footer-social-container #engadget-footer-social::before, #engadget-footer-social-container #engadget-footer-social::after {
+  display: table;
+  content: ' ';
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#engadget-footer-social-container #engadget-footer-social::after {
+  clear: both;
+}
+
+#engadget-footer-social-container #engadget-footer-social a {
+  color: #e6e6e6 !important;
+}
+
+#engadget-footer-social-container #engadget-footer-social .footer-left {
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-left {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+#engadget-footer-social-container #engadget-footer-social .footer-left:last-child:not(:first-child) {
+  float: right;
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-left {
+    width: 50%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-left {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-left:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-left {
+    width: 41.66667%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-left {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-left:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+#engadget-footer-social-container #engadget-footer-social .footer-left .input-group-field {
+  background: #fefefe;
+}
+
+#engadget-footer-social-container #engadget-footer-social .footer-right {
+  text-align: right;
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-right {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+#engadget-footer-social-container #engadget-footer-social .footer-right:last-child:not(:first-child) {
+  float: right;
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-right {
+    width: 50%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-right {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-social-container #engadget-footer-social .footer-right:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+#engadget-footer-social-container #engadget-footer-social .fa {
+  padding: 0 0 0 0.6rem;
+}
+
+#engadget-footer-social-container #engadget-footer-social h2 {
+  color: #fefefe;
+}
+
+#engadget-footer-social-container #engadget-footer-social p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+#engadget-footer-contact-details-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
+  background-color: #fefefe;
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: #8a8a8a;
+  padding: 1.25rem 0;
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details::before, #engadget-footer-contact-details-container #engadget-footer-contact-details::after {
+  display: table;
+  content: ' ';
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details::after {
+  clear: both;
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details a {
+  color: #8a8a8a !important;
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left:last-child:not(:first-child) {
+  float: right;
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left li {
+  display: block;
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+    width: 50%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    text-align: left;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+    width: 66.66667%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left:last-child:not(:first-child) {
+    float: right;
+  }
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left ul {
+    margin-bottom: 0;
+  }
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left li {
+    display: inline-block;
+  }
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left .fa {
+  padding: 0 0.4rem;
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+    display: none !important;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+    width: 50%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+    width: 33.33333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    text-align: right;
+  }
+}
+
+@media print, screen and (min-width: 64em) and (min-width: 40em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right:last-child:not(:first-child) {
+    float: right;
+  }
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right ul {
+    padding-top: 1.6rem;
+  }
+}
+
+#engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right .fa {
+  padding: 0 0.4rem;
+}
+
+.logo-rule{
+        color: transparent;
+    display: table;
+    background: url(.assets/images/CI_logo_212x90.png) center top no-repeat;
+    background-size: 32px 31px;
+}
+
+.logo-rule::before{    background-image: linear-gradient(transparent 48%,rgba(62,73,73,.2) 49%,rgba(62,73,73,.2) 51%,transparent 52%);
+    content: '';
+    display: table-cell;
+    width: 50%;
+    height: 0px;
+}
+
+.logo-rule::after{
+        background-image: linear-gradient(transparent 48%,rgba(62,73,73,.2) 49%,rgba(62,73,73,.2) 51%,transparent 52%);
+    content: '';
+    display: table-cell;
+    width: 50%;
+    height: 31px;
+}
+
