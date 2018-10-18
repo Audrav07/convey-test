@@ -17,7 +17,7 @@ $message = $msg;
 $headers = "Web Form";
 mail($to,$subject,$message,$headers);
 echo "Mail Sent. Thanks you";
-}
+};
 ?>
 
 
