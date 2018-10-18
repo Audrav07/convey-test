@@ -551,7 +551,16 @@
      $(document).foundation();
  </script>
  <script>
-    $('#myForm')
+    
+
+
+  $("#myForm").bind("invalid.zf.abide", function(ev,elem) {
+    console.log("Field "+elem.attr('name')+" is invalid");
+  })
+ $("#myForm").bind("valid.zf.abide", function(ev,elem) {
+    console.log(ev.target.id+" is valid");
+  });
+$('#myForm')
     .on('valid', function(){
 
         var name=$("input#name").val();
@@ -578,15 +587,6 @@
         }); 
         return false;
     });
-
-
-
-  .bind("invalid.zf.abide", function(ev,elem) {
-    console.log("Field "+elem.attr('name')+" is invalid");
-  })
-  .bind("valid.zf.abide", function(ev,elem) {
-    console.log(ev.target.id+" is valid");
-  });
 
 
 </script>
