@@ -1,4 +1,5 @@
 <?php
+if(isset($_POST['submit'])){
 $name = $_POST["name"];
 $email = $_POST["email"];
 $message =$_POST["message"];
@@ -15,7 +16,8 @@ $subject = "Web Form";
 $message = $msg;
 $headers = "Web Form";
 mail($to,$subject,$message,$headers);
-echo "Thank you!";
+echo "Mail Sent. Thanks you";
+}
 ?>
 
 
