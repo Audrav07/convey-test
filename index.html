@@ -552,7 +552,9 @@
  </script>
  <script>
     
-
+$(".contact__button").bind("click", function(){
+    $("#myForm").foundation("validateForm");
+});
 
   $("#myForm").bind("invalid.zf.abide", function(ev,elem) {
     console.log("Field "+elem.attr('name')+" is invalid");
