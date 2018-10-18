@@ -471,7 +471,7 @@
           <textarea id="message" name="message" id="message" rows="12" placeholder="Type your message here" name="user_message" aria-describedby="example4Error"required></textarea>
           <span id="example4Error" class="form-error">This field is required.</span>
           <div class="contact-us-form-actions">
-            <button type="button" class="button contact__button" style="background-color: #0486E4; color: #ffffff;">Submit</button>
+            <button type="button" class="button contact__button" value="submit" style="background-color: #0486E4; color: #ffffff;">Submit</button>
           <!--   <input type="submit" class="contact__button" value="Send it" /> -->
             
           </div>
@@ -552,9 +552,9 @@
  </script>
  <script>
     
-$(".contact__button").bind("click", function(){
-    $("#myForm").foundation("validateForm");
-});
+// $(".contact__button").bind("click", function(){
+//     $("#myForm").foundation("validateForm");
+// });
 
   $("#myForm").bind("invalid.zf.abide", function(ev,elem) {
     console.log("Field "+elem.attr('name')+" is invalid");
@@ -562,6 +562,14 @@ $(".contact__button").bind("click", function(){
  $("#myForm").bind("valid.zf.abide", function(ev,elem) {
     console.log(ev.target.id+" is valid");
   });
+
+ $("#myForm").bind("submit", function(e) {
+  e.preventDefault();
+  console.log("submit intercepted");
+})
+.bind("formvalid.zf.abide", function(e,$form) {
+  // ajax submit
+});
 $('#myForm')
     .on('valid', function(){
 
