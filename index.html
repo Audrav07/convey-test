@@ -548,7 +548,7 @@
     <script src="js/mail.php"></script>
 <script src="https://use.fontawesome.com/75437beb3c.js"></script>
     <script>
-     $(document).foundation();
+     $(document).foundation(abide);
  </script>
  <script>
     
@@ -571,7 +571,7 @@
   // ajax submit
 });
 $('#myForm')
-    .on('valid', function(){
+    .on('submit', function(){
 
         var name=$("input#name").val();
         var email=$("input#email").val();
