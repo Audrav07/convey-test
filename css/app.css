@@ -337,6 +337,8 @@ u {
     /* background-color: white; */
     /* color: red; */
     border: 3px solid white;
+        font-weight: bold;
+
 }
 
 
@@ -724,6 +726,9 @@ table thead {
 .contact__button{
     background-color: #0486E4;
     color: #ffffff;
+    font-weight: bold;
+
+
 
 }
 
@@ -735,6 +740,7 @@ table thead {
     float: left;
     width: 100%;
     font-weight: bold;
+
 
 }
 

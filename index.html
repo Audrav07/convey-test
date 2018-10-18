@@ -457,18 +457,25 @@
       </div>
       <div class="cell large-auto" style="background-color: #F7FAFF;">
         <h1 class="contact-us-header" style="color:#000000;">Mail Us</h1>
-        <form accept-charset="UTF-8" class="contact-us-form" action="mail.php" enctype="text/plain" method="POST">
-          <input type="text" placeholder="Full name" name="user_name" /> 
-          <span class="error">* <?php echo $nameErr;?></span>
-        <br><br>
-          <input type="email" placeholder="Email" name="user_email" /> 
-          <span class="error">* <?php echo $emailErr;?></span>
-        <br><br>
-          <textarea name="message" id="message" rows="12" placeholder="Type your message here" name="user_message"></textarea>
+        <form id="myForm" data-abide class="contact-us-form" action="mail.php" enctype="text/plain" method="POST">
+  <div data-abide-error class="alert callout" aria-live="assertive" style="display: none;">
+              <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
+  <div class="contactForm">
+          <input id="name" type="text" placeholder="Full name" name="user_name" aria-describedby="example4Error"required /> 
+              <span id="example4Error" class="form-error">This field is required.</span>
+                   
+          <input id="email" type="email" placeholder="Email" name="user_email" aria-describedby="example4Error"required /> 
+           <span id="example4Error" class="form-error">This field is required.</span>
+ 
+          <textarea id="message" name="message" id="message" rows="12" placeholder="Type your message here" name="user_message" aria-describedby="example4Error"required></textarea>
+          <span id="example4Error" class="form-error">This field is required.</span>
           <div class="contact-us-form-actions">
-            <input type="submit" class="contact__button" value="Send it" />
+            <button type="button" class="button contact__button" style="background-color: #0486E4; color: #ffffff;">Submit</button>
+          <!--   <input type="submit" class="contact__button" value="Send it" /> -->
             
           </div>
+      </div>
         </form>
       </div>
     </div>
@@ -525,14 +532,62 @@
 </div>
 
 <script src="https://use.fontawesome.com/75437beb3c.js"></script>
+
     <script src="js/vendor/jquery.js">
     </script> 
     <script src="js/vendor/what-input.js">
     </script> 
     <script src="js/vendor/foundation.js">
     </script> 
-    <script src="js/app.js">
+<!--     <script src="js/vendor/foundation.min.js"></script>
+ -->    <script src="js/app.js">
     </script>
-    <script src="mail.php"></script>
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.abide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.core.js"></script> -->
+    <script src="js/mail.php"></script>
+
+    <script>
+     $(document).foundation();
+ </script>
+ <script>
+    $('#myForm')
+    .on('valid', function(){
+
+        var name=$("input#name").val();
+        var email=$("input#email").val();
+        var message =$("textarea#message").val();
+
+        var dataString = "name=" + name + 
+        '#email=' + email +
+        '&message' + message;
+
+        //begain AJAX call
+
+        $.ajax({
+            type:"POST",
+            url: "php/mail.php",
+            data: dataString,
+            success: function(){
+                $('.contact-us-form').html("<div id='thanks '></div>");
+                $('#thanks').tml("<h2>Thanks!</h2>")
+                .append("<p>Dear "+ name +"!, I will contact you soon.</p>")
+                .hide()
+                .fadeIn(1500);
+            },
+        }); 
+        return false;
+    });
+
+
+
+  .bind("invalid.zf.abide", function(ev,elem) {
+    console.log("Field "+elem.attr('name')+" is invalid");
+  })
+  .bind("valid.zf.abide", function(ev,elem) {
+    console.log(ev.target.id+" is valid");
+  });
+
+
+</script>
 </body>
 </html>

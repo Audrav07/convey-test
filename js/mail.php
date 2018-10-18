@@ -1,7 +1,27 @@
-
-
 <?php
-// define variables and set to empty values
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message =$_POST["message"];
+
+$msg ="
+
+Name: $nameEmail: $email
+Comments:
+$message
+";
+
+$to= "audrey.davis14@gmail.com";
+$subject = "Web Form";
+$message = $msg;
+$headers = "Web Form";
+mail($to,$subject,$message,$headers);
+
+?>
+
+
+
+<!-- // define variables and set to empty values
 $nameErr = $emailErr = "";
 $name = $email = $comment = "";
 
@@ -27,4 +47,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   
 }
-?>
+?> -->
